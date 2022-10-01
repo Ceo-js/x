@@ -1,0 +1,18 @@
+
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #27f;
+}
+
+btn {
+    display: grid; place-items: center;
+    width: 150px; height: 150px;
+    background: #00ca38;
+    border-radius: 2rem;
+}

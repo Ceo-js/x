@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Ceo</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <!-- <link rel="stylesheet" href="./css.css"> -->
+</head>
+<body>
+    <appbar></appbar>
+    
+    <drawer></drawer>
+    
+    <home>produtos pag
+        <btn src="http://localhost:7879/produtos">Produtos</btn>
+        <btn src="http://localhost:7879/contatos">Contatos</btn>
+        <btn src="http://localhost:7879/">Index</btn>
+    </home>
+    
+    <footer></footer>
+    
+    
+    <script src="js.js"></script>
+    <script>
+        window.addEventListener( "load", ev => {
+            var btns = document.querySelectorAll( "btn" );
+
+            btns.forEach( btn => {
+                btn.addEventListener( "click", ev => {
+                    window.open( btn.getAttribute( "src" ), "_self" );
+                } );
+            } );
+        } );
+    </script>
+</body>
+</html>
